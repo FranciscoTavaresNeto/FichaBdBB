@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang=“pt-br">
+<head>
+<title>Ficha MdA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <label>Atributos</label><br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Atributo</th>
+                <th>Nível</th>
+                <th>Bônus</th>
+                <th>XP Gasto</th>
+                <th>Bônus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Força</td>
+                <td><input class="form-control col-xs-2" type="number" value="0" id="forca" min="0" max="5"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_forca" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_forca" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_forca" disabled></td>
+            </tr>
+            <tr>
+                <td>Inteligência</td>
+                <td><input class="form-control" type="number" value="0" id="inteligencia" min="0" max="5"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_inteligencia" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_inteligencia" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_inteligencia" disabled></td>
+            </tr>
+            <tr>
+                <td>Destreza</td>
+                <td><input class="form-control" type="number" value="0" id="destreza" min="0" max="5"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_destreza" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_destreza" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_destreza" disabled></td>
+            </tr>
+            <tr>
+                <td>Vigor</td>
+                <td><input class="form-control" type="number" value="0" id="vigor" min="0" max="5"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_vigor" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_vigor" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_vigor" disabled></td>
+            </tr>
+            <tr>
+                <td>Resistência</td>
+                <td><input class="form-control" type="number" value="0" id="resistencia" min="0" max="5"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_resistencia" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_resistencia" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_resistencia" disabled></td>
+            </tr>
+        </tbody>
+    </table><br>
+    <label>Artes</label><br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Arte</th>
+                <th>Nível</th>
+                <th>Bônus</th>
+                <th>XP Gasto</th>
+                <th>Bônus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zanjutsu</td>
+                <td><input class="form-control" type="number" value="0" id="zan" min="0" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_zan" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_zan" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_zan" disabled></td>
+            </tr>
+            <tr>
+                <td>Hakuda</td>
+                <td><input class="form-control" type="number" value="0" id="hak" min="0" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_hak" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_hak" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_hak" disabled></td>
+            </tr>
+            <tr>
+                <td>Kidou</td>
+                <td><input class="form-control" type="number" value="0" id="kid" min="0" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_kid" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_kid" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_kid" disabled></td>
+            </tr>
+        </tbody>
+    </table>
+    <label>Perícias</label><br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Perícia</th>
+                <th>Nível</th>
+                <th>Bônus</th>
+                <th>XP Gasto</th>
+                <th>Bônus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Percepção</td>
+                <td><input class="form-control" type="number" value="0" id="percepcao" min="0" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_percepcao" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_percepcao" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_percepcao" disabled></td>
+            </tr>
+            <tr>
+                <td>Absorção Espiritual</td>
+                <td><input class="form-control" type="number" value="0" id="ae" min="0" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_ae" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_ae" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_ae" disabled></td>
+            </tr>
+            <tr>
+                <td>Reflexo</td>
+                <td><input class="form-control" type="number" value="0" id="reflexo" min="0" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_reflexo" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_reflexo" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_reflexo" disabled></td>
+            </tr>
+            <tr>
+                <td>Manipulação Elemental</td>
+                <td><input class="form-control" type="number" value="0" id="me" min="0" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_me" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_me" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_me" disabled></td>
+            </tr>
+            <tr>
+                <td>Houhou</td>
+                <td><input class="form-control" type="number" value="1" id="houhou" min="1" max="10"></td>
+                <td><input class="form-control" type="text" value="0" id="bonus_houhou" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="xp_houhou" disabled></td>
+                <td><input class="form-control" type="text" value="0" id="teste_houhou" disabled></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+<footer>
+<script language="JavaScript">
+</script>
+</footer>
+</html>

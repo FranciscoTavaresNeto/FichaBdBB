@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang=“pt-br">
+<head>
+<title>Ficha MdA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="col-xs-3">
+        <div class="form-group">
+            <label for="sel_nome">Nome </label>
+            <select class="form-control" id="sel_nome">
+                <option>Yuji Ide</option>
+                <option>Take Inoue</option>
+                <option>Yamagata Koji</option>
+            </select>
+            <label for="gênero">Genero </label>
+            <select class="form-control" id="genero">
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Indefinido</option>
+            </select>
+            <label for="classe">Classe </label>
+            <!--Mover para o Estilo de Luta-->
+            <select class="form-control" id="classe">
+                <option>Tem</option>
+                <option>Classe</option>
+                <option>Pra</option>
+                <option>Caralho</option>
+            </select>
+            <label for="raca">Raça </label>
+            <div class="radio">
+                <label><input type="radio" name="optradio" checked>Shinigami</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio" data-toggle="collapse" data-target="#raca_secundaria">Híbrido</label>
+            </div>
+            <div id="raca_secundaria" class="collapse">
+                <label for="selHibrido">Raça Secundária</label>
+                <select class="form-control" id="selHibrido" type="text">
+                    <option>Hollow</option>
+                    <option>Quincy</option>
+                </select>
+            </div>
+            <label for="divisao">Divisão </label>
+            <!--Fazer um script para mostrar/ativar só as divisões disponíveis-->
+            <select class="form-control" id="divisao">
+                <option>01ª Divisão</option>
+                <option>02ª Divisão</option>
+                <option>03ª Divisão</option>
+                <option>04ª Divisão</option>
+                <option>05ª Divisão</option>
+                <option>06ª Divisão</option>
+                <option>07ª Divisão</option>
+                <option>08ª Divisão</option>
+                <option>09ª Divisão</option>
+                <option>10ª Divisão</option>
+                <option>11ª Divisão</option>
+                <option>12ª Divisão</option>
+                <option>13ª Divisão</option>
+                <option>Kidoushuu</option>
+            </select>
+            <label for="posto">Posto </label>
+            <select class="form-control" id="posto">
+                <option>Taichou (Capitão)</option>
+                <option>Fukutaichou (Tenente)</option>
+                <option>Sansaki (Terceiro Oficial)</option>
+                <option>Saki (Oficial)</option>
+            </select>
+            <label for="aptidao">Aptidão </label>
+            <select class="form-control" id="aptidao">
+                <option>Mágica Elemental</option>
+                <option>Mágica Espiritual</option>
+                <option>Física Corporal</option>
+                <option>Física Sensorial</option>
+            </select>
+            <label for="especializacao">Especialização </label>
+            <select class="form-control" id="especializacao">
+                <option>Zanjutsu Carrier</option>
+                <option>Zanjutsu Guardião</option>
+                <option>Zanjutsu Suporte</option>
+                <option>Hakuda Carrier</option>
+                <option>Hakuda Guardião</option>
+                <option>Hakuda Suporte</option>
+                <option>Kidou Carrier</option>
+                <option>Kidou Guardião</option>
+                <option>Kidou Suporte</option>
+            </select>
+            <div class="checkbox">
+                <label><input type="checkbox" value="True" id="lendario">Lendário</label>
+            </div>
+            <button type="button" class="btn" onclick="ativaHibrido()">Testar</button>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+<script language="JavaScript">
+    function mostraLendario(){
+        str = document.getElementById('lendario').value;
+        alert(str);
+    }
+    function ativaHibrido(){
+        alert(document.getElementById('raca').value == "Híbrido");
+        if (document.getElementById('raca').value == "Híbrido") {
+            document.getElementById('selHibrido').removeAttribute(disabled);
+        }
+    }
+</script>
+</footer>
+</html>
